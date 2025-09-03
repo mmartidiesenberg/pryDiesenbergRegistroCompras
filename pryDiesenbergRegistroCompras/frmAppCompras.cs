@@ -17,10 +17,21 @@ namespace pryDiesenbergRegistroCompras
         {
             InitializeComponent();
         }
-
+        DateTime vFecha;
+        string vProducto;
+        int vCantidad;
+        int vPrecioUnitario;
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Producto Registrado Correctamente");
+            vFecha = dtpFecha.Value;
+            vProducto = lstNombre.Text;
+            vCantidad = Convert.ToInt32(numCant.Value);
+            vPrecioUnitario = Convert.ToInt32(txtPrecio.Text);
+
+            lblResultados.Text =
+                vFecha.ToString() + " - " + vProducto
+                + vCantidad.ToString() + " - "
+                + vPrecioUnitario.ToString();   
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -48,7 +59,11 @@ namespace pryDiesenbergRegistroCompras
             else 
                 numCant.Enabled = false;   
         }
-     
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
+       

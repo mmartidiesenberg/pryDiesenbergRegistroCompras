@@ -39,6 +39,7 @@
             this.numCant = new System.Windows.Forms.NumericUpDown();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.lblIngresar = new System.Windows.Forms.Label();
+            this.lblResultados = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numCant)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             this.lblFecha.Size = new System.Drawing.Size(52, 22);
             this.lblFecha.TabIndex = 0;
             this.lblFecha.Text = "Fecha";
+            this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
             // 
             // lblProducto
             // 
@@ -95,7 +97,7 @@
             // 
             this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(292, 257);
+            this.btnRegistrar.Location = new System.Drawing.Point(333, 257);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(114, 31);
             this.btnRegistrar.TabIndex = 5;
@@ -107,7 +109,7 @@
             // 
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(95, 257);
+            this.btnCancelar.Location = new System.Drawing.Point(30, 257);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 31);
             this.btnCancelar.TabIndex = 6;
@@ -161,12 +163,22 @@
             this.lblIngresar.TabIndex = 13;
             this.lblIngresar.Text = "Ingrese los Datos del Producto a Registrar";
             // 
+            // lblResultados
+            // 
+            this.lblResultados.AutoSize = true;
+            this.lblResultados.Location = new System.Drawing.Point(149, 267);
+            this.lblResultados.Name = "lblResultados";
+            this.lblResultados.Size = new System.Drawing.Size(60, 13);
+            this.lblResultados.TabIndex = 14;
+            this.lblResultados.Text = "Resultados";
+            // 
             // frmAppCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(482, 300);
+            this.Controls.Add(this.lblResultados);
             this.Controls.Add(this.lblIngresar);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.numCant);
@@ -199,6 +211,7 @@
         private System.Windows.Forms.NumericUpDown numCant;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
         private System.Windows.Forms.Label lblIngresar;
+        private System.Windows.Forms.Label lblResultados;
     }
 }
 
