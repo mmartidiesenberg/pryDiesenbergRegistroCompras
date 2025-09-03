@@ -137,9 +137,11 @@
             this.txtPrecio.BackColor = System.Drawing.Color.MistyRose;
             this.txtPrecio.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecio.Location = new System.Drawing.Point(254, 196);
+            this.txtPrecio.Mask = "99999";
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(122, 25);
             this.txtPrecio.TabIndex = 12;
+            this.txtPrecio.ValidatingType = typeof(int);
             // 
             // frmAppCompras
             // 
