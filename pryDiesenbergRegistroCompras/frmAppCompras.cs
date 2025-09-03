@@ -44,5 +44,13 @@ namespace pryDiesenbergRegistroCompras
                 numCantidad.Enabled = true;
             }
         }
+
+        private void numCantidad_ValueChanged(object sender, EventArgs e)
+        {
+            if (txtCantidad.Text != "")
+            { 
+                
+            }
+        }
     }
 }

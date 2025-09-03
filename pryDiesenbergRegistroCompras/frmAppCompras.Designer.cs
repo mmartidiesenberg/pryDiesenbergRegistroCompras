@@ -141,6 +141,7 @@
             this.numCantidad.Name = "numCantidad";
             this.numCantidad.Size = new System.Drawing.Size(122, 25);
             this.numCantidad.TabIndex = 11;
+            this.numCantidad.ValueChanged += new System.EventHandler(this.numCantidad_ValueChanged);
             // 
             // txtPrecio
             // 
