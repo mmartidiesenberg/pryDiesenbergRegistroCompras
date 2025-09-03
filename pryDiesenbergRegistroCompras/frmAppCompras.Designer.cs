@@ -36,10 +36,10 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lstNombre = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numCant = new System.Windows.Forms.NumericUpDown();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.lblIngresar = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCant)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
@@ -125,19 +125,24 @@
             this.lstNombre.Name = "lstNombre";
             this.lstNombre.Size = new System.Drawing.Size(219, 26);
             this.lstNombre.TabIndex = 10;
+            this.lstNombre.SelectedIndexChanged += new System.EventHandler(this.lstNombre_SelectedIndexChanged);
+            this.lstNombre.TextChanged += new System.EventHandler(this.lstNombre_TextChanged);
             // 
-            // numericUpDown1
+            // numCant
             // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.MistyRose;
-            this.numericUpDown1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(216, 155);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(122, 25);
-            this.numericUpDown1.TabIndex = 11;
+            this.numCant.BackColor = System.Drawing.Color.MistyRose;
+            this.numCant.Enabled = false;
+            this.numCant.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCant.Location = new System.Drawing.Point(216, 155);
+            this.numCant.Name = "numCant";
+            this.numCant.Size = new System.Drawing.Size(122, 25);
+            this.numCant.TabIndex = 11;
+            this.numCant.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // txtPrecio
             // 
             this.txtPrecio.BackColor = System.Drawing.Color.MistyRose;
+            this.txtPrecio.Enabled = false;
             this.txtPrecio.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecio.Location = new System.Drawing.Point(216, 202);
             this.txtPrecio.Mask = "99999";
@@ -164,7 +169,7 @@
             this.ClientSize = new System.Drawing.Size(482, 300);
             this.Controls.Add(this.lblIngresar);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numCant);
             this.Controls.Add(this.lstNombre);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
@@ -175,7 +180,7 @@
             this.Controls.Add(this.lblFecha);
             this.Name = "frmAppCompras";
             this.Text = "Registro Compras";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +196,7 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox lstNombre;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numCant;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
         private System.Windows.Forms.Label lblIngresar;
     }

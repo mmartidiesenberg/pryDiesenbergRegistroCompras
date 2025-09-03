@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,5 +27,28 @@ namespace pryDiesenbergRegistroCompras
         {
             this.Close();
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            if (numCant.Value > 0)
+            {
+                txtPrecio.Enabled = true; 
+            }
+        }
+
+        private void lstNombre_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (lstNombre.Text != "")
+                numCant.Enabled = true;
+            else 
+                numCant.Enabled = false;   
+        }
+     
     }
 }
+
