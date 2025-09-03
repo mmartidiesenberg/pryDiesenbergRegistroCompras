@@ -47,7 +47,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(21, 60);
+            this.lblFecha.Location = new System.Drawing.Point(21, 37);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(52, 22);
             this.lblFecha.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.lblProducto.AutoSize = true;
             this.lblProducto.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducto.Location = new System.Drawing.Point(21, 109);
+            this.lblProducto.Location = new System.Drawing.Point(21, 74);
             this.lblProducto.Name = "lblProducto";
             this.lblProducto.Size = new System.Drawing.Size(171, 22);
             this.lblProducto.TabIndex = 1;
@@ -68,7 +68,7 @@
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(21, 155);
+            this.lblCantidad.Location = new System.Drawing.Point(26, 122);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(162, 22);
             this.lblCantidad.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             this.lblPrecioU.AutoSize = true;
             this.lblPrecioU.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioU.Location = new System.Drawing.Point(21, 205);
+            this.lblPrecioU.Location = new System.Drawing.Point(21, 163);
             this.lblPrecioU.Name = "lblPrecioU";
             this.lblPrecioU.Size = new System.Drawing.Size(122, 22);
             this.lblPrecioU.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             this.dtpFecha.CalendarMonthBackground = System.Drawing.Color.MistyRose;
             this.dtpFecha.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(216, 58);
+            this.dtpFecha.Location = new System.Drawing.Point(216, 35);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(242, 25);
             this.dtpFecha.TabIndex = 4;
@@ -123,7 +123,7 @@
             this.lstNombre.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstNombre.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lstNombre.FormattingEnabled = true;
-            this.lstNombre.Location = new System.Drawing.Point(216, 105);
+            this.lstNombre.Location = new System.Drawing.Point(216, 74);
             this.lstNombre.Name = "lstNombre";
             this.lstNombre.Size = new System.Drawing.Size(219, 26);
             this.lstNombre.TabIndex = 10;
@@ -135,7 +135,7 @@
             this.numCant.BackColor = System.Drawing.Color.MistyRose;
             this.numCant.Enabled = false;
             this.numCant.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCant.Location = new System.Drawing.Point(216, 155);
+            this.numCant.Location = new System.Drawing.Point(216, 119);
             this.numCant.Name = "numCant";
             this.numCant.Size = new System.Drawing.Size(122, 25);
             this.numCant.TabIndex = 11;
@@ -146,7 +146,7 @@
             this.txtPrecio.BackColor = System.Drawing.Color.MistyRose;
             this.txtPrecio.Enabled = false;
             this.txtPrecio.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(216, 202);
+            this.txtPrecio.Location = new System.Drawing.Point(216, 160);
             this.txtPrecio.Mask = "99999";
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(122, 25);
@@ -157,7 +157,7 @@
             // 
             this.lblIngresar.AutoSize = true;
             this.lblIngresar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngresar.Location = new System.Drawing.Point(64, 9);
+            this.lblIngresar.Location = new System.Drawing.Point(64, -1);
             this.lblIngresar.Name = "lblIngresar";
             this.lblIngresar.Size = new System.Drawing.Size(371, 25);
             this.lblIngresar.TabIndex = 13;
@@ -166,9 +166,10 @@
             // lblResultados
             // 
             this.lblResultados.AutoSize = true;
-            this.lblResultados.Location = new System.Drawing.Point(149, 267);
+            this.lblResultados.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultados.Location = new System.Drawing.Point(27, 207);
             this.lblResultados.Name = "lblResultados";
-            this.lblResultados.Size = new System.Drawing.Size(60, 13);
+            this.lblResultados.Size = new System.Drawing.Size(75, 18);
             this.lblResultados.TabIndex = 14;
             this.lblResultados.Text = "Resultados";
             // 
