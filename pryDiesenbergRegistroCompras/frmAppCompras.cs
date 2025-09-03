@@ -26,5 +26,23 @@ namespace pryDiesenbergRegistroCompras
         {
             this.Close();
         }
+
+        private void lblProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstNombre_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCantidad.Text != "")
+            {
+                numCantidad.Enabled = true;
+            }
+        }
     }
 }
