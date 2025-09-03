@@ -32,12 +32,13 @@
             this.lblProducto = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblPrecioU = new System.Windows.Forms.Label();
-            this.dtFecha = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lstNombre = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
+            this.lblIngresar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(39, 52);
+            this.lblFecha.Location = new System.Drawing.Point(39, 60);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(52, 22);
             this.lblFecha.TabIndex = 0;
@@ -55,7 +56,7 @@
             // 
             this.lblProducto.AutoSize = true;
             this.lblProducto.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducto.Location = new System.Drawing.Point(39, 96);
+            this.lblProducto.Location = new System.Drawing.Point(39, 113);
             this.lblProducto.Name = "lblProducto";
             this.lblProducto.Size = new System.Drawing.Size(171, 22);
             this.lblProducto.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(39, 140);
+            this.lblCantidad.Location = new System.Drawing.Point(39, 158);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(162, 22);
             this.lblCantidad.TabIndex = 2;
@@ -75,25 +76,25 @@
             // 
             this.lblPrecioU.AutoSize = true;
             this.lblPrecioU.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioU.Location = new System.Drawing.Point(39, 185);
+            this.lblPrecioU.Location = new System.Drawing.Point(39, 205);
             this.lblPrecioU.Name = "lblPrecioU";
             this.lblPrecioU.Size = new System.Drawing.Size(122, 22);
             this.lblPrecioU.TabIndex = 3;
             this.lblPrecioU.Text = "Precio Unitario";
             // 
-            // dtFecha
+            // dtpFecha
             // 
-            this.dtFecha.CalendarMonthBackground = System.Drawing.Color.MistyRose;
-            this.dtFecha.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtFecha.Location = new System.Drawing.Point(254, 54);
-            this.dtFecha.Name = "dtFecha";
-            this.dtFecha.Size = new System.Drawing.Size(242, 25);
-            this.dtFecha.TabIndex = 4;
+            this.dtpFecha.CalendarMonthBackground = System.Drawing.Color.MistyRose;
+            this.dtpFecha.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Location = new System.Drawing.Point(254, 57);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(242, 25);
+            this.dtpFecha.TabIndex = 4;
             // 
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(135, 233);
+            this.btnRegistrar.Location = new System.Drawing.Point(135, 245);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(90, 31);
             this.btnRegistrar.TabIndex = 5;
@@ -104,7 +105,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(378, 233);
+            this.btnCancelar.Location = new System.Drawing.Point(379, 245);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 31);
             this.btnCancelar.TabIndex = 6;
@@ -118,7 +119,7 @@
             this.lstNombre.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstNombre.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lstNombre.FormattingEnabled = true;
-            this.lstNombre.Location = new System.Drawing.Point(254, 96);
+            this.lstNombre.Location = new System.Drawing.Point(254, 109);
             this.lstNombre.Name = "lstNombre";
             this.lstNombre.Size = new System.Drawing.Size(122, 26);
             this.lstNombre.TabIndex = 10;
@@ -127,7 +128,7 @@
             // 
             this.numericUpDown1.BackColor = System.Drawing.Color.MistyRose;
             this.numericUpDown1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(254, 144);
+            this.numericUpDown1.Location = new System.Drawing.Point(254, 155);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(122, 25);
             this.numericUpDown1.TabIndex = 11;
@@ -136,12 +137,22 @@
             // 
             this.txtPrecio.BackColor = System.Drawing.Color.MistyRose;
             this.txtPrecio.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(254, 196);
+            this.txtPrecio.Location = new System.Drawing.Point(254, 202);
             this.txtPrecio.Mask = "99999";
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(122, 25);
             this.txtPrecio.TabIndex = 12;
             this.txtPrecio.ValidatingType = typeof(int);
+            // 
+            // lblIngresar
+            // 
+            this.lblIngresar.AutoSize = true;
+            this.lblIngresar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresar.Location = new System.Drawing.Point(130, 9);
+            this.lblIngresar.Name = "lblIngresar";
+            this.lblIngresar.Size = new System.Drawing.Size(371, 25);
+            this.lblIngresar.TabIndex = 13;
+            this.lblIngresar.Text = "Ingrese los Datos del Producto a Registrar";
             // 
             // frmAppCompras
             // 
@@ -149,12 +160,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(582, 322);
+            this.Controls.Add(this.lblIngresar);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.lstNombre);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.dtFecha);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblPrecioU);
             this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.lblProducto);
@@ -173,12 +185,13 @@
         private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblPrecioU;
-        private System.Windows.Forms.DateTimePicker dtFecha;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox lstNombre;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
+        private System.Windows.Forms.Label lblIngresar;
     }
 }
 
