@@ -92,6 +92,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(242, 25);
             this.dtpFecha.TabIndex = 4;
+            this.dtpFecha.Value = new System.DateTime(2025, 9, 3, 13, 42, 2, 0);
             // 
             // btnRegistrar
             // 
@@ -137,7 +138,7 @@
             this.numCant.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numCant.Location = new System.Drawing.Point(216, 119);
             this.numCant.Name = "numCant";
-            this.numCant.Size = new System.Drawing.Size(122, 25);
+            this.numCant.Size = new System.Drawing.Size(38, 25);
             this.numCant.TabIndex = 11;
             this.numCant.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
